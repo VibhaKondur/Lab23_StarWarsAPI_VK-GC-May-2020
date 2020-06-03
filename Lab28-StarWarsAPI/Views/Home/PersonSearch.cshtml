@@ -1,0 +1,12 @@
+﻿@model Person
+
+@if (Model != null)
+{
+    <h2>@Model.name</h2>
+}
+
+
+<form action="PersonSearch" method="post">
+    <input name="Id" type="number" />
+    <input type="submit" />
+</form>

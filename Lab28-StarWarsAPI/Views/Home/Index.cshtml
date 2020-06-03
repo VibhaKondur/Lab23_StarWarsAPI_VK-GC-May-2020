@@ -1,0 +1,19 @@
+﻿@model List<Person>
+
+
+
+<form asp-controller="Home" asp-action="Privacy">
+    <select name="id">
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            <option value="@(i + 1)">@Model[i].name</option>
+        }
+    </select>
+    <input type="submit" />
+</form>
+
+
+<p><a href="/Home/PersonSearch">Person Search</a></p>
+<p><a href="/Home/StarshipSearch">Starship Search</a></p>
+<p><a href="/Home/PlanetSearch">Planet Search</a></p>
+

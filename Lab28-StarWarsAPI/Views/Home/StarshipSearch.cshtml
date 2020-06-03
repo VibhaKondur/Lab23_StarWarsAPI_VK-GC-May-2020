@@ -1,0 +1,12 @@
+﻿@model Starship
+
+@if (Model != null)
+{
+    <h2>@Model.name</h2>
+}
+
+
+<form action="StarshipSearch" method="post">
+    <input name="Id" type="number" />
+    <input type="submit" />
+</form>
